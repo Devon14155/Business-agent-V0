@@ -1,0 +1,21 @@
+{
+  "short_name": "Biz Agent",
+  "name": "Business Agent",
+  "description": "An AI-powered Progressive Web App that acts as a top-tier business professor and execution partner. It features a chatbot, business canvas builder, competitive analysis with search grounding, and other advanced tools to accelerate your workflow.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3B82F6",
+  "background_color": "#0F172A"
+}

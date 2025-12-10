@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Pocket Business Expert</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3B82F6" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-dark': '#0F172A',
+              'brand-medium': '#1E293B',
+              'brand-light': '#334155',
+              'brand-accent': '#3B82F6',
+              'brand-accent-hover': '#2563EB',
+              'brand-text-light': '#E2E8F0',
+              'brand-text-dark': '#94A3B8',
+
+              // Light mode colors
+              'lm-bg': '#F8FAFC', // light mode background
+              'lm-bg-alt': '#FFFFFF', // light mode secondary bg
+              'lm-border': '#E2E8F0', // light mode border
+              'lm-text': '#0F172A', // light mode primary text
+              'lm-text-alt': '#64748B', // light mode secondary text
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "dexie": "https://aistudiocdn.com/dexie@^4.0.0/dist/dexie.mjs",
+    "@jest/globals": "https://aistudiocdn.com/@jest/globals@^30.2.0",
+    "@testing-library/react": "https://aistudiocdn.com/@testing-library/react@^16.3.0",
+    "@testing-library/jest-dom": "https://aistudiocdn.com/@testing-library/jest-dom@^6.9.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-lm-bg text-lm-text dark:bg-brand-dark dark:text-brand-text-light transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "Business Agent",
+  "description": "An AI-powered Progressive Web App that acts as a top-tier business professor and execution partner. It features a chatbot, business canvas builder, competitive analysis with search grounding, and other advanced tools to accelerate your workflow.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
